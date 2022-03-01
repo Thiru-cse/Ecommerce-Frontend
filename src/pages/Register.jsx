@@ -8,10 +8,7 @@ import { Link, useHistory } from "react-router-dom";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
+  background-color: #3d2828;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -21,13 +18,16 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 40%;
   padding: 20px;
-  background-color: white;
+  border: 1px solid black;
+  border-radius: 6px;
   ${mobile({ width: "75%" })}
 `;
 
 const Title = styled.h1`
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 700;
+  color: white;
+  text-align: center;
 `;
 
 const Form = styled.form`
@@ -38,21 +38,27 @@ const Form = styled.form`
 const Input = styled.input`
   flex: 3;
   min-width: 40%;
+  border: 1px solid #444;
+  border-radius: 6px;
   margin: 20px 10px 0px 0px;
+  background-color: #000000;
+  color: white;
   padding: 10px;
 `;
 
 const Agreement = styled.span`
   font-size: 12px;
   margin: 20px 0px;
+  color: white;
 `;
 
 const Button = styled.button`
   width: 40%;
   border: none;
   padding: 15px 20px;
-  background-color: teal;
-  color: white;
+  background-color: black;
+  color: #f7cb09;
+  font-weight: 700;
   cursor: pointer;
 `;
 
@@ -96,7 +102,7 @@ const Register = () => {
             <br/>
             <br/>
           <Link to="/login">
-          <Links style={{ marginTop:"20px"}}>Already, Have an Account?</Links>
+          <Links style={{ marginTop:"20px", color: "#12b7f8"}}>Already, Have an Account?</Links>
           </Link>
           </Agreement>
           <Button type="submit">CREATE</Button>

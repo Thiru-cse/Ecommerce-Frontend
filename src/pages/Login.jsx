@@ -10,6 +10,7 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
+  background-color: #3d2828;
   align-items: center;
   justify-content: center;
 `;
@@ -17,13 +18,15 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 25%;
   padding: 20px;
-  background-color: white;
+  border: 1px solid black;
   ${mobile({ width: "75%" })}
 `;
 
 const Title = styled.h1`
   font-size: 24px;
-  font-weight: 300;
+  color: white;
+  text-align: center
+  font-weight: 700;
 `;
 
 const Form = styled.form`
@@ -35,15 +38,20 @@ const Input = styled.input`
   flex: 1;
   min-width: 40%;
   margin: 10px 0;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #000000;
+  color: white;
   padding: 10px;
 `;
 
 const Button = styled.button`
   width: 40%;
   border: none;
-  padding: 15px 20px;
-  background-color: teal;
-  color: white;
+  padding: 10px 20px;
+  background-color: black;
+  color: #f7cb09;
+  font-weight: 700;
   cursor: pointer;
   margin-bottom: 10px;
   &:disabled {
@@ -98,7 +106,7 @@ const Login = () => {
             LOGIN
           </Button>
           <Link to="/register">
-          <Links>CREATE A NEW ACCOUNT</Links>
+          <Links style={{color: "#12b7f8"}} >CREATE A NEW ACCOUNT</Links>
           </Link>
         </Form>
       </Wrapper>
