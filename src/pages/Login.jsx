@@ -110,7 +110,7 @@ const Login = () => {
           </Link>
         </Form>
         <p style={{ margin: "1em", fontSize: ".9rem", color: "white" }}>Sample Login</p>
-        <p style={{ margin: "1em", fontSize: ".9rem", color: "white" }}>Username: stark , Password: 123456</p>
+        <p style={{ margin: "1em", fontSize: ".9rem", color: "white" }}>Username: stark , Password: stark</p>
       </Wrapper>
     </Container>
   );
